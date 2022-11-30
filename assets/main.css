@@ -1,0 +1,295 @@
+*{
+    box-sizing: inherit;
+}
+
+html {
+    margin: 0px;
+}
+
+.app {
+    width: 100%;
+    position: relative;
+}
+
+/* HEADER */
+
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 1px 2px #e0e0e0;
+}
+
+.head__content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.head__logo{
+    display: flex;
+    align-items: center;
+}
+
+.head__logo-img{
+    position: relative;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.head__logo-img a{
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+    padding-left: 21px;
+    padding-top: 3px;
+}
+
+.head__logo-name p{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+}
+
+.head__icon{
+    align-items: center;
+    display: flex;
+}
+
+.head__icon .head__icon-github {
+    background-color: #F26464;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+.head__icon .head__icon-github .fa-github {
+    padding-top: 4px;
+    color: white;
+}
+
+.head__icon .head__icon-linkedin{
+    background-color: #F26464;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.head__icon .head__icon-linkedin .fa-linkedin-in {
+    padding-top: 4.5px;
+    color: white;
+}
+
+.head__icon .head__icon-stack {
+    background-color: #F26464;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.head__icon .head__icon-stack .fa-stack-overflow {
+    padding-top: 3px;
+    color: white;
+}
+
+.head__icon--hover:hover {
+    cursor: pointer;
+    background-color: #cd6363;
+    box-shadow: 2px 2px 2px #e0e0e0;
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+/* CONTAINER */
+.container {
+    padding-top: 160px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.app__banner {
+    display: flex;
+    justify-content: center;
+}
+
+.app__banner .app__banner-img {
+   margin-right: 15px ; 
+}
+
+.app__banner .app__banner-img img {
+    width: 500px;
+    height: 650px;
+    border-radius: 20px;
+}
+
+.app__banner-content{
+    margin: 20px 120px 30px;
+}
+
+.app__banner-content--head{
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.app__banner-content--body {
+    padding: 20px 0 ;
+}
+
+.app__banner-content--body p{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.app__banner-content--end {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+
+.conten__end .content__end-number p {
+    font-size: 45px;
+    margin: 0px;
+    color: #F26464;
+    font-weight: bold;
+}
+
+.conten__end .content__end-text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* Abuot */
+
+.app__about{
+    margin-top: 80px;
+
+}
+
+.app__about--heading {
+    width: 100px;
+}
+
+.app__about--heading h2 {
+    font-size: 18px;
+    border-bottom: 3px solid #F26464 ;
+}
+
+.app__about--content p {
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.app__about--end {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.app__about--button {
+    border-radius: 30px;
+    padding: 15px;
+    width: 200px;
+    border: 3px solid #F26464;
+    margin: 50px 0px;
+}
+
+.app__about--button:hover {
+    background-color: #F26464;
+    box-shadow: 4px 4px 4px #e0e0e0;
+}
+
+.app__about--button:hover a{
+    color: white;
+}
+
+
+.app__about--button a{
+    color: #F26464;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* App list */
+
+.app__list {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__left {
+    width: 50%;
+    margin-right: 20px;
+}
+.menu__list-heading h2 {
+    width: 126px;
+    font-size: 18px;
+    border-bottom: 3px solid #F26464 ;
+}
+.menu__list {
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.menu__list .menu__list-item {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+    padding: 10px 20px;
+    list-style: none;
+    border: 1px solid #9f9e9e;
+    border-radius: 40px;
+    font-size: 17px;
+}
+
+.menu__right {
+    width: 50%;
+
+}
+
+.menu__list-heading--next h2 {
+    width: 140px;
+}
+
+
+
+
